@@ -194,7 +194,7 @@ hr {
 .sub-btns input, .sub-btns button {
     padding: 10px;
 }
-.sub-btns #email {
+.sub-btns .email {
     margin-bottom: 10px;
     border-color: white;
 }
@@ -248,6 +248,7 @@ footer {
 }
 .attribution a { 
     color: var(--Moderate-Cyan); 
+    text-decoration: none;
 }
 
 /* Active State */
@@ -348,7 +349,7 @@ button:hover {
         text-align: left;
         margin-left: 100px;
     }
-    .sub-btns #email {
+    .sub-btns .email {
         margin-left: 0;
         width: 200%;
     }
