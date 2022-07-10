@@ -222,6 +222,10 @@ footer {
 .footer-spn {
     margin-bottom: 15px;
 }
+.footer-spn a {
+    color: white;
+    text-decoration: none;
+}
 .socials {
     display: flex;
     justify-content: center;
@@ -229,7 +233,12 @@ footer {
     padding-right: 40px;
 }
 .socials img[src]{
-    width: 35px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
 }
 .attribution { 
     font-size: 11px; 
@@ -239,6 +248,31 @@ footer {
 }
 .attribution a { 
     color: var(--Moderate-Cyan); 
+}
+
+/* Active State */
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(153, 153, 237);
+    border-color: rgb(153, 153, 237);
+}
+.fylo-works:hover {
+    cursor: pointer;
+    color: rgb(222, 236, 231);
+}
+.cyan a:hover {
+    cursor: pointer;
+    color: aquamarine;
+}
+.footer-spn a:hover {
+    cursor: pointer;
+    color: var(--Bright-Blue)
+}
+.socials img[src]:hover {
+    cursor: pointer;
+    background-color: var(--Bright-Blue);
+    border-color: var(--Bright-Blue);
 }
 
 /* Desktop Styling */
