@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Width sizes
+    Mobile: 375px;
+    Desktop: 1440px;
+*/
+
+/* Colors */
+
+/* Primary */
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+}
+
+/* Accent */
+
+:root {
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+}
+
+/* Neutral */
+
+:root {
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+/* Font Styles */
+/* Headings, Call-to-actions, Header Navigation */
+
+:root {
+    --font-family1: 'Raleway', sans-serif;
+    --font-weight: 400, 700;
+}
+/* Body */
+:root {
+    --font-family2: 'Open Sans', sans-serif;
+    --font-weight: 400;
+}
+
+/* Mobile First Styling */
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family1);
+}
+.container {
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+}
+li {
+    padding: 0 15px;
+    color: var(--Desaturated-Blue);
+    font-size: small;
+}
+.logo {
+    width: 80px;
+    margin-top: 17px;
+}
+.illustration {
+    width: 300px;
+    margin-top: 100px;
+}
+.banner-section h1 {
+    font-family: var(--font-family2);
+    font-size: x-large;
+    padding: 10px 20px;
+}
+.banner-section p {
+    padding: 0px 10px;
+    color: var(--Desaturated-Blue);
+}
+input {
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px solid var(--Very-Dark-Blue);
+    border-radius: 5px;
+    font-family: var(--font-family1);
+}
+input::placeholder {
+    color: var(--Light-Gray);
+}
+button {
+    width: 80%;
+    padding: 15px;
+    background-color: var(--Bright-Blue);
+    border: 1px solid var(--Bright-Blue);
+    border-radius: 5px;
+    color: white;
+    font-family: var(--font-family1);
+    font-weight: bolder;
+}
+section {
+    margin-top: 90px;
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top, center;
+    padding-bottom: 100px;
+    position: relative;
+}
+section h2 {
+    padding: 70px 20px 10px;
+    font-size: medium;
+    color: var(--Very-Dark-Blue);
+}
+section p {
+    text-align: left;
+    font-family: var(--font-family2);
+    color: var(--Desaturated-Blue);
+    padding: 0 20px;
+}
+.no-attachments {
+    margin-bottom: 40px;
+}
+hr {
+    width: 160px;
+    border: .5px solid var(--Moderate-Cyan);
+}
+.cyan a {
+    color: var(--Moderate-Cyan);
+    font-size: medium;
+    text-decoration: none;
+}
+.quotes {
+   display: flex;
+   align-self: start;
+}
+.arrow {
+    margin-bottom: -2px;
+    margin-left: 5px;
+}
+.testimonial {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+    text-align: left;
+    
+    background-color: white;
+}
+.testimonial .quote {
+    font-size: x-small;
+}
+.testimonial-flex {
+    display: flex;
+    margin-top: 20px;
+}
+.avatar {
+    margin-top: -5px;
+    border-radius: 50%;
+    width: 15%;
+    height: 40px;
+    margin-right: 10px;
+}
+.avatar-name {
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: -30px;
+}
+.avatar-title {
+    font-size: xx-small;
+    margin-top: -1px;
+    padding-left: 0;
+}
+.subscription {
+    padding: 50px 30px;
+    background-color: var(--Desaturated-Blue);
+    color: white;
+}
+.sub-btns input, .sub-btns button {
+    padding: 10px;
+}
+.sub-btns #email {
+    margin-bottom: 10px;
+    border-color: white;
+}
+footer {
+    padding-top: 50px;
+    padding-left: 40px;
+    text-align: left;
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    padding-bottom: 20px;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-stn {
+    margin-bottom: 30px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+}
+.footer-spns {
+    padding-left: 20px;
+}
+.footer-spn {
+    margin-bottom: 15px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 40px;
+}
+.socials img[src]{
+    width: 35px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.attribution a { 
+    color: var(--Moderate-Cyan); 
+}
+
+/* Desktop Styling */
+
+@media screen and (min-width:600px) {
+    .container {
+        width: 1140px;
+        padding: 0 30px;
+    }
+    .banner-section {
+        margin-top: 10%;
+    }
+    .banner-section h1 {
+        font-size: 40px;
+    }
+    .illustration {
+        width: 500px;
+        height: 400px;
+        margin-top: 0;
+    }
+    .illustration-2 {
+        margin-top: 100px;
+    }
+    .right {
+        width: 50%;
+    }
+    .left {
+        width: 50%;
+        text-align: left;
+        margin-left: 0;
+    }
+    .banner-section {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 15%;
+    }
+    .banner-section p {
+        padding: 0px 20px;
+    }
+    input {
+        width: 200px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    button {
+        width: 180px;
+        padding: 10px;
+    }
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    section h2 {
+        font-size: 30px;
+    }
+    .cyan {
+        padding: 0px 20px;
+    }
+    hr {
+        margin-left: 20px;
+    }
+    .testimonial {
+        margin-left: 20px;
+    }
+    .subscription {
+        display: flex;
+        color: white;
+    }
+    .sub-btns {
+        text-align: left;
+        margin-left: 100px;
+    }
+    .sub-btns #email {
+        margin-left: 0;
+        width: 200%;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+    .block {
+        margin-top: 90px;
+    }
+    .socials {
+        margin-top: -30px;
+    }
+}
